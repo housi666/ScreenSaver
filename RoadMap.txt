@@ -1,0 +1,55 @@
+ScreenSaver v0.3.2 · Build 7 · 26.11.2026 · Phase 2 (Pre-Alpha)
+RoadMap · Stand: 26.11.2026 (v0.3.0) · kurz und knapp
+Zeiten = Schweizer Zeit · Umsetzung erst nach Freigabe durch Housi
+
+FAHRPLAN
+--------
+[x] Phase 0  Konzept und Projektgerüst (abgeschlossen, Phase 1 freigegeben 26.11.2026)
+[x] Phase 1  .scr-Grundgerüst: /s, /c, /p, Beenden, Monitor-Auswahl, Carbon-Gerät mit Glasdisplay, Uhr mit Farbverlauf (Build erfolgreich 26.11.2026, Test auf dem Rechner steht aus)
+[ ] Phase 2  (in Arbeit, Code geschrieben, noch nicht kompiliert) Einstellungsfenster Carbon mit Live-Vorschau, Gerätegrösse; weitere Modi (Laufschrift, Plasma, Wellen/Equalizer), Datum, Modi abwechseln
+[ ] Phase 3  (in Arbeit, Code geschrieben, noch nicht kompiliert) Installer, Update-Funktion nach Regelwerk, Support, Changelog, Rechtstexte
+[ ] Phase 4  Feinschliff, Pixel-Shift, Tests (DPI, mehrere Monitore), Release 1.0.0
+
+EIGENE EINTRÄGE
+---------------
+WICHTIG
+[ ] Build und Test auf Housis Rechner (build.bat, dann Rechtsklick Test/Konfigurieren)
+[ ]
+MITTEL
+[ ]
+[ ]
+OPTIONAL
+[ ]
+[ ]
+ZUKUNFT
+[ ]
+[ ] Reaktion auf den PC-Ton (Audio-Loopback)
+
+OFFEN
+-----
+F6  Installation nach System32 auf Windows 11 prüfen (Adminrechte)
+
+ENTSCHIEDEN (26.11.2026)
+F8  Update-Repo: housi666/ScreenSaver (bestätigt 26.11.2026, nach Regelwerk Konto housi666 und Repo je Produkt; im Programm in Version.h unter BSL_REPO)
+F9  Gerätegrösse einstellbar (30 bis 100 Prozent)
+F3  Schrift-Lizenz egal, wird nicht veröffentlicht
+F5  LED-Auflösung 16 × 64 vorerst
+F1  Name „ScreenSaver“ (26.11.2026, vorher „Bildschirmschoner LED“)
+F2  keine feste Akzentfarbe, Verläufe sind das Thema
+F4  kein Tipps-Fenster
+F7  Monitore wählbar je nach Hardware, zum Testen ein Monitor
+
+ZUKUNFT
+-------
+Audio-Reaktion, weitere Themes (Carbon ist das erste)
+
+ERLEDIGT
+--------
+Gross
+Mittel
+Klein
+23.11.2026  Konzept.md, RoadMap.txt, Changelog.txt angelegt
+26.11.2026  Entscheide F1, F2, F4, F7 eingearbeitet
+26.11.2026  Phase 1 Code geschrieben (Source\main.cpp, build.bat), Build erfolgreich
+26.11.2026  v0.3.1: Housi-Logo eingebaut (Resources\Logo.png, Silber)
+26.11.2026  v0.3.0: Einstellungen nach Regelwerk, Gerätegrösse, Logo-Platz, Installer, Update (Code geschrieben, nicht getestet)

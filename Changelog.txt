@@ -1,0 +1,50 @@
+ScreenSaver (vorher Bildschirmschoner LED) – Changelog
+Neueste Version zuerst. Zeiten = Schweizer Zeit
+
+** PRE-ALPHA **
+
+v0.3.2 · Build 7 · 26.11.2026 23:05
+- neu: Name ScreenSaver statt Bildschirmschoner LED (Entscheid Housi). Dateien ScreenSaver.scr, ScreenSaver-Setup-v…exe, installer\ScreenSaver.iss
+- intern: Update-Repo bestätigt: github.com/housi666/ScreenSaver
+- intern: Einstellungen jetzt in %APPDATA%\ScreenSaver, die alte Datei aus %APPDATA%\BildschirmschonerLED wird beim ersten Start übernommen
+- intern: Installer gleiche AppId, entfernt die alte BildschirmschonerLED.scr aus System32 und stellt die Windows-Auswahl auf den neuen Namen um, falls der alte eingestellt war
+- intern: build.bat wieder als ein Skript mit Windows-Zeilenenden (baue.cmd entfällt, darf gelöscht werden)
+- Hinweis: v0.3.1 Build 6 wurde erfolgreich gebaut (ohne Fehler und Warnungen) und läuft laut Housi
+
+v0.3.1 · Build 6 · 26.11.2026 23:25
+- neu: Housi-Logo oben links am Gerät statt des Programmnamens (aus "Housi Logo Schwarz.svg", als Resources\Logo.png in Silber #b8bdc6 umgesetzt, da Schwarz auf dem Carbon-Gehäuse nicht sichtbar wäre)
+- intern: build.bat ohne Klammerblöcke (Syntaxfehler brach das Skript sofort ab), schreibt Protokoll nach build\build-log.txt und bleibt immer offen
+- geändert: Kopfbereich des Geräts höher (Logo 66 Einheiten hoch), Blende und Glas entsprechend etwas niedriger
+
+v0.3.1 · Build 6 · 26.11.2026 23:10
+- neu: Einstellungsfenster im Carbon-Stil nach Regelwerk (Direct2D): glänzende Display-Knöpfe in eigenen Farben mit gemeinsamem Lichtstreifen und Klick-Animation, Live-Vorschau, Schrift Inter eingebettet
+- neu: Gerätegrösse einstellbar (30 bis 100 Prozent, Schritt 5); die Vorschau zeigt das Gerät in einem Bildschirm in dieser Grösse
+- neu: Support-Fenster (Instagram, TikTok housi_666), Rechtstexte (Nutzungsbedingungen, Datenschutz, Fassung 26.11.2026), Changelog-Fenster (dreifach aufklappbar), Phasen-Abzeichen "Pre-Alpha" mit Hinweis
+- neu: Update-Funktion nach Regelwerk (GitHub housi666/BildschirmschonerLED, Download mit Ladebalken, Prüfsumme SHA-256, Installieren erst nach Prüfung, Automatische Updates Standard aus)
+- neu: Installer (Inno Setup, installer\BildschirmschonerLED.iss): installiert nach System32, optional als Windows-Bildschirmschoner einstellen; build.bat baut ihn mit
+- neu: Logo-Platz oben links am Gerät statt des Programmnamens; ohne Logo-Datei steht vorläufig der Text HOUSI (Resources\Logo.png wird beim Bauen automatisch eingebettet)
+- besser: Pixel-Shift bleibt immer im freien Rand, unabhängig von der Gerätegrösse
+- intern: Quellcode aufgeteilt (Common.h, Gfx.h, Ui.h, Update.h, Changelog.h, Legal.h, main.cpp, app.rc)
+- Hinweis: noch nicht kompiliert und nicht getestet. Kein Tipps-Fenster (Abweichung vom Regelwerk, siehe Konzept.md). Rechtstexte sind Vorlagen
+
+v0.2.1 · Build 4 · 26.11.2026 22:25
+- fix: Build-Fehler (min/max- und DrawText-Makros von windows.h abgeschaltet)
+- intern: "Test starten.bat" und "Einstellungen.bat" zum Starten ohne Rechtsklick-Menü (auf Housis Rechner ist .scr mit AutoCAD verknüpft)
+
+v0.2.0 · Build 3 · 26.11.2026 22:50
+- neu: Phase 1 Grundgerüst als Bildschirmschoner (.scr) mit /s (Vollbild), /c (Einstellungen), /p (Vorschau)
+- neu: Carbon-Gerät mit Glasdisplay und LED-Matrix 16 × 64 (Glow, Glanzschicht)
+- neu: Modus Uhr (HH:MM, blinkender Doppelpunkt) mit wanderndem Farbverlauf; Sekundenleiste in der untersten Zeile
+- neu: fünf Farbverläufe (Regenbogen, Feuer, Eis, Metal, Grün und Petrol), Tempo einstellbar
+- neu: Monitor-Auswahl (Standard nur Hauptmonitor, nicht gewählte bleiben schwarz), Gerät wandert langsam gegen Einbrennen
+- neu: schlichtes Einstellungsfenster (Carbon-Stil folgt in Phase 2), Einstellungen in %APPDATA%\BildschirmschonerLED
+- neu: build.bat (Visual Studio mit C++-Werkzeugen), Ergebnis in fertig\, Versionen archiviert in Versionen\
+- Hinweis: noch nicht kompiliert und nicht getestet; Schrift vorläufig Segoe UI statt Inter
+
+v0.1.1 · Build 2 · 26.11.2026 21:59
+- Konzept: keine feste Akzentfarbe, Monitore wählbar je nach Hardware (zum Testen ein Monitor), kein Tipps-Fenster (Abweichung vom Regelwerk, begründet), Name bestätigt
+-
+v0.1.0 · Build 1 · 23.11.2026 22:30
+- neu: Projektgerüst in Phase 0 (Konzept.md, RoadMap.txt, Changelog.txt)
+- Entscheide Housi: Ordner Desktop\Claude\Bildschirmschoner, Look Carbon-Gerät mit Glasdisplay, Anzeige per Option umstellbar
+-

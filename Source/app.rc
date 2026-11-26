@@ -1,0 +1,6 @@
+// ScreenSaver v0.3.2 · Build 7 · 2026-11-26 · Ressourcen: Schrift Inter (OFL), Logo (optional)
+101 RCDATA "..\\Resources\\Fonts\\Inter-Regular.ttf"
+102 RCDATA "..\\Resources\\Fonts\\Inter-Bold.ttf"
+#ifdef HAS_LOGO
+103 RCDATA "..\\Resources\\Logo.png"
+#endif
